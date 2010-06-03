@@ -1,0 +1,16 @@
+.rvmrc
+.bundle
+db/*.sqlite3
+config/database.yml
+db/schema.rb
+log/*.log
+tmp/*
+tmp/**/*
+coverage
+*.pid
+public/system
+public/uploads
+rerun.txt
+.autotest
+webrat*.html
+vendor/cache/*

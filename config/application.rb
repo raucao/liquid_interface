@@ -41,7 +41,7 @@ module LiquidInterface
     config.generators do |g|
       g.orm             :mongoid
       g.template_engine :haml
-      g.test_framework  :rspec, :fixture_replacement => :factory_girl, :dir => "spec/factories"
+      g.test_framework  :rspec, :fixture_replacement => :factory_girl, :dir => "test/factories"
     end
 
     # Configure the default encoding used in templates for Ruby 1.9.

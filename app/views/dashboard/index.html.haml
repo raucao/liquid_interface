@@ -1,23 +1,4 @@
 %h2
-  LQPP Fun
+  Dashboard
   
-%h3
-  Issues & Initiatives
-
-%table.issues
-  %tr
-    %th Issue&nbsp;ID
-    %th Population
-    %th Initiatives
-    %th Area Name
-    
-  - @issues.each do |issue|
-    %tr
-      %td= issue.original_id
-      %td= issue.population
-      %td.initiatives
-        %ul
-          - issue.initiatives.each do |initiative|
-            %li
-              = initiative.title
-      %td.area= issue.area
+[stats]

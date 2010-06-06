@@ -58,7 +58,86 @@ a img {
   border: none;
 }
 
-/* line 3, ../../../app/stylesheets/screen.sass */
+/* line 1, ../../../app/stylesheets/partials/_navigation.sass */
+ul.issue_filter {
+  margin: 20px 0 15px 0;
+  list-style: none;
+}
+/* line 2, ../../../app/stylesheets/partials/_base.sass */
+ul.issue_filter:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 5, ../../../app/stylesheets/partials/_navigation.sass */
+ul.issue_filter li {
+  float: left;
+}
+/* line 7, ../../../app/stylesheets/partials/_navigation.sass */
+ul.issue_filter li a {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 5px 0 0;
+  color: #888888;
+  text-decoration: none;
+}
+/* line 13, ../../../app/stylesheets/partials/_navigation.sass */
+ul.issue_filter li a:hover {
+  font-weight: normal;
+  background: #e4edf9;
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+  border-radius: 0.7em;
+  color: black;
+}
+/* line 20, ../../../app/stylesheets/partials/_navigation.sass */
+ul.issue_filter li a.current {
+  font-weight: normal;
+  background: #e4edf9;
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+  border-radius: 0.7em;
+  color: black;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_tables.sass */
+table {
+  border-collapse: collapse;
+}
+/* line 3, ../../../app/stylesheets/partials/_tables.sass */
+table.issues {
+  width: 100%;
+}
+
+/* line 6, ../../../app/stylesheets/partials/_tables.sass */
+tr {
+  border-bottom: 3px solid #efefef;
+}
+
+/* line 9, ../../../app/stylesheets/partials/_tables.sass */
+th, td {
+  padding: 10px 10px 10px 0;
+  line-height: 140%;
+}
+
+/* line 13, ../../../app/stylesheets/partials/_tables.sass */
+th {
+  font-weight: bold;
+}
+
+/* line 17, ../../../app/stylesheets/partials/_tables.sass */
+td {
+  vertical-align: top;
+}
+/* line 19, ../../../app/stylesheets/partials/_tables.sass */
+td.area {
+  font-size: 12px;
+}
+
+/* line 6, ../../../app/stylesheets/screen.sass */
 body {
   margin: 30px;
   font-family: "Helvetica Neue", Corbel, Arial, sans-serif;
@@ -66,46 +145,16 @@ body {
   font-weight: normal;
 }
 
-/* line 10, ../../../app/stylesheets/screen.sass */
-h2 {
+/* line 13, ../../../app/stylesheets/screen.sass */
+h1 {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 30px 0;
 }
 
-/* line 16, ../../../app/stylesheets/screen.sass */
-h3 {
+/* line 19, ../../../app/stylesheets/screen.sass */
+h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0 0 16px 0;
-}
-
-/* line 22, ../../../app/stylesheets/screen.sass */
-table {
-  border-collapse: collapse;
-}
-
-/* line 25, ../../../app/stylesheets/screen.sass */
-tr {
-  border-bottom: 3px solid #efefef;
-}
-
-/* line 28, ../../../app/stylesheets/screen.sass */
-th, td {
-  padding: 10px 10px 10px 0;
-  line-height: 140%;
-}
-
-/* line 32, ../../../app/stylesheets/screen.sass */
-th {
-  font-weight: bold;
-}
-
-/* line 36, ../../../app/stylesheets/screen.sass */
-td {
-  vertical-align: top;
-}
-/* line 38, ../../../app/stylesheets/screen.sass */
-td.area {
-  font-size: 12px;
 }

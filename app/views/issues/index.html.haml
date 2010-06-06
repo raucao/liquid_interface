@@ -19,8 +19,8 @@
     
   - @issues.each do |issue|
     %tr
-      %td
-        = "#"+issue.original_id.to_s
+      %td.issue
+        = link_to "#"+issue.original_id.to_s, "https://lqpp.de/be/issue/show/#{issue.original_id.to_s}.html"
         - if params[:state].blank?
           %br
           %span.state= issue.state
@@ -37,5 +37,5 @@
                   = initiative.positive_votes
                 %span.negative_votes
                   = initiative.negative_votes
-              = initiative.title
+              = link_to initiative.title, "https://lqpp.de/be/initiative/show/#{initiative.original_data["id"].to_s}.html"
       %td.area= issue.area

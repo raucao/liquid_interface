@@ -141,19 +141,39 @@ td span.state {
   font-size: 12px;
   color: #888888;
 }
-/* line 26, ../../../app/stylesheets/partials/_tables.sass */
+/* line 27, ../../../app/stylesheets/partials/_tables.sass */
+td.issue a {
+  text-decoration: none;
+  color: black;
+}
+/* line 30, ../../../app/stylesheets/partials/_tables.sass */
+td.issue a:hover {
+  padding: 2px 0;
+  background-color: #efefef;
+}
+/* line 33, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives {
   padding-bottom: 8px;
 }
-/* line 29, ../../../app/stylesheets/partials/_tables.sass */
+/* line 36, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives ul li {
   margin: 0 0 2px 0;
 }
-/* line 31, ../../../app/stylesheets/partials/_tables.sass */
+/* line 38, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives ul li.revoked {
   text-decoration: line-through;
 }
-/* line 33, ../../../app/stylesheets/partials/_tables.sass */
+/* line 40, ../../../app/stylesheets/partials/_tables.sass */
+td.initiatives ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* line 43, ../../../app/stylesheets/partials/_tables.sass */
+td.initiatives ul li a:hover {
+  padding: 2px 0;
+  background-color: #efefef;
+}
+/* line 46, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives .supporter_count, td.initiatives .positive_votes, td.initiatives .negative_votes {
   display: block;
   width: 30px;
@@ -162,7 +182,7 @@ td.initiatives .supporter_count, td.initiatives .positive_votes, td.initiatives 
   font-size: 12px;
   background-color: #efefef;
 }
-/* line 40, ../../../app/stylesheets/partials/_tables.sass */
+/* line 53, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives .supporter_count {
   padding: 0 3px;
   margin: 0 5px 0 0;
@@ -171,7 +191,7 @@ td.initiatives .supporter_count {
   -webkit-border-radius: 0.7em;
   border-radius: 0.7em;
 }
-/* line 47, ../../../app/stylesheets/partials/_tables.sass */
+/* line 60, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives .positive_votes {
   padding: 0 2px 0 3px;
   margin: 0 1px 0 0;
@@ -183,7 +203,7 @@ td.initiatives .positive_votes {
   border-top-left-radius: 0.7em;
   border-bottom-left-radius: 0.7em;
 }
-/* line 57, ../../../app/stylesheets/partials/_tables.sass */
+/* line 70, ../../../app/stylesheets/partials/_tables.sass */
 td.initiatives .negative_votes {
   padding: 0 3px 0 2px;
   margin: 0 5px 0 0;

@@ -27,7 +27,15 @@
       %td= issue.population
       %td.initiatives
         %ul
-          - issue.initiatives.each do |initiative|
-            %li
+          - issue.initiatives_by_supporters.each do |initiative|
+            %li{:class => (initiative.revoked? ? "revoked" : "")}
+              - unless issue.finished?
+                %span.supporter_count
+                  = initiative.supporter_count
+              - else
+                %span.positive_votes
+                  = initiative.positive_votes
+                %span.negative_votes
+                  = initiative.negative_votes
               = initiative.title
       %td.area= issue.area

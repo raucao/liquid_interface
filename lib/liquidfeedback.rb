@@ -30,12 +30,23 @@ module Liquidfeedback
         issue.area = initiative["area_name"].to_s if issue.area.blank?
         issue.save
         
-        issue.initiatives.create(
-          :original_data => initiative,
-          :title => initiative["name"]
-        )
+        add_initiative_to_issue(initiative, issue)
       end
     end
+    
+    protected
+    
+      def add_initiative_to_issue(initiative, issue)
+        issue.initiatives.create(
+          :title => initiative["name"].to_s,
+          :supporter_count => initiative["supporter_count"].to_i,
+          :informed_supporter_count => initiative["informed_supporter_count"].to_i,
+          :positive_votes => initiative["positive_votes"].to_i,
+          :negative_votes => initiative["negative_votes"].to_i,
+          :revoked => (initiative["revoked"] == "NULL" ? nil : initiative["revoked"]),
+          :original_data => initiative
+        )
+      end
     
   end
 end

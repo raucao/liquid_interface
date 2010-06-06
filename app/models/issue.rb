@@ -12,6 +12,13 @@ class Issue
   index :population
   
   embeds_many :initiatives
-
+  
+  def finished?
+    state == "finished"
+  end
+  
+  def initiatives_by_supporters
+    self.initiatives.sort {|a,b| b.supporter_count <=> a.supporter_count}
+  end
 
 end

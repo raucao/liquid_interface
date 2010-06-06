@@ -1,5 +1,5 @@
-Huh?
-====
+What is this?
+=============
 
 At the moment this is just a fun project. The intention is to build a light-weight base for LiquidFeedback API client applications, as well as to add some useful features like e.g. statistics and valuable LF tools.
 
@@ -9,28 +9,31 @@ Dependencies
 ============
 
 * Rails 3
+* Bundler
 * MongoDB
 
 Getting started
 ===============
 
-With the latest Rails 3 beta gem installed and a MongoDB running on localhost, just follow these steps to get the application running:
+With the Rails 3 and Bundler gems installed and a MongoDB running on localhost, just follow these steps to get the application running:
 
 1. Clone the repository and cd to the app dir:
 
-    $ git clone git://github.com/skddc/liquid_interface.git
-    $ cd liquid_interface
+        $ git clone git://github.com/skddc/liquid_interface.git  
+        $ cd liquid_interface
 
 2. Install the app dependencies:
 
-    $ bundle install
+        $ bundle install
 
-3. Use the custom rake task to import issues and initiatives:
+3. Add your LiquidFeedback API key to config/initializers/config.rb
 
-    $ rake liquid:sync
+4. Use the following rake task to import issues and initiatives (currently only from lqpp.de/be):
 
-4. Start the server:
+        $ rake liquid:sync
 
-    $ rails server
+5. Start the server:
 
-5. Point you browser to localhost:3000 and enjoy (only /issues has content at the moment).
+        $ rails server
+
+6. Point you browser to http://localhost:3000 and enjoy (only /issues has content at the moment).

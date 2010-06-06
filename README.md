@@ -3,7 +3,8 @@ What is this?
 
 At the moment this is just a fun project. The intention is to build a light-weight base for LiquidFeedback API client applications, as well as to add some useful features like e.g. statistics and valuable LF tools.
 
-More information on LiquidFeedback: http://www.public-software-group.org/liquid_feedback
+More information on LiquidFeedback: <http://www.public-software-group.org/liquid_feedback>  
+This is what (part of) the frontend currently looks like: <http://img.skitch.com/20100606-r85edfmp742brbi6t38sxwjwb3.jpg>
 
 Dependencies
 ============
@@ -36,4 +37,4 @@ With the Rails 3 and Bundler gems installed and a MongoDB running on localhost, 
 
         $ rails server
 
-6. Point you browser to http://localhost:3000 and enjoy (only /issues has content at the moment).
+6. Point you browser to <http://localhost:3000> and enjoy (only /issues has content at the moment).

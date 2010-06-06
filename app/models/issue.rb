@@ -20,5 +20,9 @@ class Issue
   def initiatives_by_supporters
     self.initiatives.sort {|a,b| b.supporter_count <=> a.supporter_count}
   end
+  
+  def initiatives_by_votes
+    self.initiatives.sort {|a,b| b.positive_votes <=> a.positive_votes}
+  end
 
 end

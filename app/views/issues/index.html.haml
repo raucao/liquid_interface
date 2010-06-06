@@ -27,15 +27,6 @@
       %td= issue.population
       %td.initiatives
         %ul
-          - issue.initiatives_by_supporters.each do |initiative|
-            %li{:class => (initiative.revoked? ? "revoked" : "")}
-              - unless issue.finished?
-                %span.supporter_count
-                  = initiative.supporter_count
-              - else
-                %span.positive_votes
-                  = initiative.positive_votes
-                %span.negative_votes
-                  = initiative.negative_votes
-              = link_to initiative.title, "https://lqpp.de/be/initiative/show/#{initiative.original_data["id"].to_s}.html"
+          = render :partial => "initiatives", :locals => { :issue => issue, 
+              :initiatives => (issue.finished? ? issue.initiatives_by_votes : issue.initiatives_by_supporters) }
       %td.area= issue.area

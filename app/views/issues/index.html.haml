@@ -4,22 +4,26 @@
 %ul.issue_filter
   %li= link_to "all", issues_url, :class => (params[:state].blank? ? "current" : "")
   %li= link_to_issues "new"
-  %li= link_to_issues "discussion"
+  %li= link_to_issues "accepted"
   %li= link_to_issues "voting"
   %li= link_to_issues "frozen"
-  %li= link_to_issues "closed"
+  %li= link_to_issues "finished"
   %li= link_to_issues "cancelled"
 
 %table.issues
   %tr
-    %th Issue&nbsp;ID
+    %th Issue
     %th Population
     %th Initiatives
     %th Area Name
     
   - @issues.each do |issue|
     %tr
-      %td= issue.original_id
+      %td
+        = "#"+issue.original_id.to_s
+        - if params[:state].blank?
+          %br
+          %span.state= issue.state
       %td= issue.population
       %td.initiatives
         %ul

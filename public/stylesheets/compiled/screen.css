@@ -136,6 +136,11 @@ td {
 td.area {
   font-size: 12px;
 }
+/* line 22, ../../../app/stylesheets/partials/_tables.sass */
+td span.state {
+  font-size: 12px;
+  color: #888888;
+}
 
 /* line 6, ../../../app/stylesheets/screen.sass */
 body {

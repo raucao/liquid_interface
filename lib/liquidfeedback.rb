@@ -9,9 +9,8 @@ module Liquidfeedback
     headers  'User-Agent' => 'Liquid Interface 0.0.1'
     format :xml
 
-    def initialize#p(args)
-      # @country    = args.delete(:country)
-      @api_key    = "vRLGpcJywKWD7Zgmz7By"
+    def initialize
+      @api_key = LQPP_API_KEY
     end
 
     def get_initiatives

@@ -5,8 +5,8 @@
   %li= link_to "all", issues_url, :class => (params[:state].blank? ? "current" : "")
   %li= link_to_issues "new"
   %li= link_to_issues "accepted"
-  %li= link_to_issues "voting"
   %li= link_to_issues "frozen"
+  %li= link_to_issues "voting"
   %li= link_to_issues "finished"
   %li= link_to_issues "cancelled"
 

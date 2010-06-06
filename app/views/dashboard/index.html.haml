@@ -6,8 +6,8 @@
 
 %table.issues
   %tr
-    %th Issue ID
-    %th Issue Population
+    %th Issue&nbsp;ID
+    %th Population
     %th Initiatives
     %th Area Name
     
@@ -20,4 +20,4 @@
           - issue.initiatives.each do |initiative|
             %li
               = initiative.title
-      %td= issue.area
+      %td.area= issue.area

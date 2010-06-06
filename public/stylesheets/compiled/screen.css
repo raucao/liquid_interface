@@ -81,11 +81,31 @@ h3 {
 }
 
 /* line 22, ../../../app/stylesheets/screen.sass */
-th, td {
-  padding: 6px 10px 0 0;
+table {
+  border-collapse: collapse;
 }
 
 /* line 25, ../../../app/stylesheets/screen.sass */
+tr {
+  border-bottom: 3px solid #efefef;
+}
+
+/* line 28, ../../../app/stylesheets/screen.sass */
+th, td {
+  padding: 10px 10px 10px 0;
+  line-height: 140%;
+}
+
+/* line 32, ../../../app/stylesheets/screen.sass */
 th {
   font-weight: bold;
+}
+
+/* line 36, ../../../app/stylesheets/screen.sass */
+td {
+  vertical-align: top;
+}
+/* line 38, ../../../app/stylesheets/screen.sass */
+td.area {
+  font-size: 12px;
 }
